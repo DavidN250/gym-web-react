@@ -1,8 +1,11 @@
 import './App.css';
+import Welcome from './components/Hello/Welcome'
+import Program from './components/Programs/Program';
 function App() {
   return (
     <div className="App">
-          <span style={{color: 'white'}}>Subscribe Zainkeepscode</span>
+          <Welcome/>
+          <Program/>
     </div>
   );
 }
