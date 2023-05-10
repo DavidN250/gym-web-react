@@ -5,6 +5,9 @@ import hello_image from '../../assets/hero_image.png'
 import hello_image_back from '../../assets/hero_image_back.png'
 import heart from '../../assets/heart.png'
 import calories from '../../assets/calories.png'
+import { motion } from 'framer-motion'
+
+const transition = {type:'spring',duration:3}
 
 function Welcome() {
     return (
@@ -14,7 +17,12 @@ function Welcome() {
 
                 {/* The Best fit ad */}
                 <div className="best-ad">
-                    <div></div>
+                    <motion.div
+                        initial={{left:'238px'}}
+                        whileInView={{left:'9px'}}
+                        transition={{...transition,type:'tween'}}
+                    >   
+                    </motion.div>
                     <span>The best Fitness club in the town</span>
                 </div>
 

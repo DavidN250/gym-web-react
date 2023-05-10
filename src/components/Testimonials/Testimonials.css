@@ -31,7 +31,7 @@
 }
 
 .right-t{
-    flex: 1;
+    flex: 1 1;
     position: relative;
 }
 
@@ -41,7 +41,7 @@
     height: 20rem;
     object-fit: cover;
     right: 13rem;
-    top: 2rem;
+    top: -2rem;
 }
 
 .right-t>:nth-child(1){
@@ -51,7 +51,7 @@
     border: 2px solid orange;
     background-color: transparent;
     right: 14rem;
-    top: 0.9rem;
+    top: -3rem;
 }
 
 .right-t>:nth-child(2) {
@@ -59,7 +59,7 @@
     width: 17rem;
     height: 19rem;
     right: 12rem;
-    top: 4rem;
+    top: .5rem;
     background: var(--planCard);
 }
 
